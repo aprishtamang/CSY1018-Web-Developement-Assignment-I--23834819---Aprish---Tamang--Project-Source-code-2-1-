@@ -3,20 +3,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*here i have mentioned the particular size after which the background color and the color will be changed*/
+@media screen and (max-width: 800px)
+{
+body .paragraph{
+  background-color: darkorchid;
+  color:white;
+}
+body footer{
+  background-color: blue;
+}
+
+}
+
 /*first bar of my site*/
 .navbar {
   width: 100%;
   height: 50px;
   background-color: lightseagreen;
+ 
+  
   
 }
 .menu-items li a {
  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-decoration: none;
+
 }
 .menu-items li {
   display: inline;
-  padding:30px;  
+  padding:30px; 
+ 
 }
 .menu-items li :hover{
 color:gold;
@@ -32,54 +49,38 @@ margin-top: 10px;
 background-image: url(./photos/profile.jpg);
 background-repeat: no-repeat;
 background-size: 40px 40px;
+display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 
 }
 
 /*this is my profile for the first page*/
-.aprish{
-  border:5px solid;
+.aprish img{
   height : 300px;
   width: 300px;
-  border-radius: 150px;
-  background-color: black; 
   float: right;
-  margin-top: 50px;
-  margin-right: 30%;
-  background-image: url(./photos/profile.jpg);
-  background-repeat: no-repeat;
-  background-size: 300px 300px;
+  border-radius: 100px;
+ 
 }
 .aprishinfo{
   background-color: aquamarine;
   padding-top: 10%;
   padding-left: 10%;
-}
-.para{
-  padding-top: 10%;
-  padding-bottom: 10%;
- background-color: blanchedalmond;
 
 }
+.paragraph{
+  background-color: blanchedalmond;
+}
 
-.first{
-  border:5px;
-  height: 500px;
-  width: 300px; 
-  margin-left: 100px;
-}
-.second{
-  border:5px;
-  height: 500px;
-  width: 300px;
-  margin-left: 180px;
-margin-right: 180px;
-}
 
 /*this is for my contact page*/
 section {
   width: 100%;
   height: 75%;
-  display: grid;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 
 .content {
@@ -87,6 +88,9 @@ section {
   width: 100%;
   box-sizing: border-box;
   font-weight: bold;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 
 }
 
@@ -95,6 +99,8 @@ section {
   margin-top: 40px;
   margin-left: 50px;
   display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 .contactright{
   margin: auto;
@@ -102,6 +108,8 @@ section {
   width: 100%;
   margin-left: 300px;
   display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 
 
 }
@@ -109,12 +117,17 @@ section {
   padding-top: 20px;
 padding-right: 50px;
 margin-top: 20px;
-
+display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 .txt{
   padding-top: 20px;
   padding-right: 50px;
   margin-top: 20px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 .submitbutn:hover{
   color: white;
@@ -127,58 +140,50 @@ margin-top: 20px;
   padding-right: 30px;
   margin-top: 20px;
   border-radius: 9px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 /*this is for the image i have put in-between the form and my contact detail*/
 .path{
   margin-left: 10%;
   margin-top: 10%;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 /*this is for my foot section*/
 
-.tail{
+footer{
   background-color: lightsteelblue;
-  display: grid;
-  gap: 1fr 1fr 1fr 1fr;
+  display: inline-flex;
+  width: 100%;
   
 }
 .left{
+font-family: sans-serif;
 
 }
-.middle{
-  text-align: center;
-  margin-left: 100px;
 
-}
-.right{
-  text-align: right;
-  margin-left: 350px;
-  margin-top: 20px;
-}
 /*this is for my portfolio*/
-.box{
-  
-  background-color: blueviolet;
-  grid-template-columns: auto;
-  column-gap: 10px;
-  row-gap: 10px;
-  display:grid;
-  padding:10px;
-  
-
-}
-.boxes{
-  background-color: blanchedalmond;
-  padding:20px;
-  font-size: 30px;
-  text-align: center;
-  border: 2px solid;
-}
+1 1 1 1 1 1 1
 /*workexperiences page working on css*/
-.work{
+.workbody{
+  width: 100%;
+  height: 80%;
   background-color: red;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+.work{
+
   height: 80%;
   width: 100%;
   padding: 100px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 /*here i have used a small logo to make my work division*/
 .photograph{
@@ -191,9 +196,15 @@ margin-top: 20px;
   background-size: 40px;
   margin-top: 20px;
   font-size: 20px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 .photogr{
   margin-left: 50px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 
 }
 .webdesign{
@@ -206,9 +217,15 @@ margin-top: 20px;
   background-size: 40px;
   margin-top: 20px;
   font-size: 20px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 }
 .webdesig{
   margin-left: 50px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   
 }
 .digi{
@@ -221,9 +238,15 @@ margin-top: 20px;
   background-size: 40px;
   margin-top: 20px;
   font-size: 20px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
 
 }
 .digital{
   margin-left: 50px;
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
   
 }
