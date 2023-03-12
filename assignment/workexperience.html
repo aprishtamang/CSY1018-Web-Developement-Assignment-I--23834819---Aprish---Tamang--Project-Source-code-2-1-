@@ -10,116 +10,120 @@
 </head>
 
 <body> 
-     <!--this is nav bar -->
-
-     <nav>
-        <div class="navbar">
-            <div class="hamburger burger-container">
-                <input type="checkbox" class="checkbox" name="" id="">
-                <div class="logo">
-                    <img src="./photos/profile.jpg" alt="this is my logo ">
-                    <a href="./index.html"></a>
-                </div>
-                <div class="hamburger-layers">
-                    <span class="layer topbun"></span>
-                    <span class="layer fillings"></span>
-                    <span class="layer lastbun"></span>
-                </div>
-                
-                <!--these items are my main contents-->
-                <div class="menu-items">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./workexperience.html">Work Experience</a></li>
-                    <li><a href="./sitereport.html">Site Report</a></li>
-                </div>
-                
-            </div>
+    <nav class="item" id="navbar">
+        <!--these items are my main contents-->
+        <div class="logo">
+            <a href="./index.html"><img src="./photos/profile.jpg" alt="this is my logo ">
+            </a>
+            <input type="checkbox" id="check" class="checkbox">
         </div>
+        <div class="dropdown"> <select class="topbtn">
+                <option value="Eng">English (Eng)</option>
+                <option value="Nep">Nepali (Nep)</option>
+                <option value="Nep">Hindi</option>
+                <option value="Nep">German</option>
+                <option value="Nep">Tamang</option>
+
+            </select>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="active" href="./workexperience.html">Work Experience</a></li>
+            <li><a href="sitereport.html">Site Report</a></li>
+        </ul>
     </nav>
-    <!--here i am working for my work experienct section-->
-    <div class="workbody">
-        <ul class="work">
-
-            <h4>What i do </h4>
-            <span>__________</span>
-            <li class="photograph">
-                <pre class="photogr"><strong>Photography</strong>:-</pre>
-            </li>
-            <li class="webdesign">
-                <pre class="webdesig"><strong>Web Designing</strong>:-
-                                  </pre>
-            </li>
-            <li class="digi">
-                <pre class="digital"><strong>Digital Marketing</strong>:-
-                                  </pre>
-            </li>
-            <li class="photogrph">
-                <pre class="photogr"><strong>Photography</strong>
-                                 </pre>
-            </li>
-            <li class="photogrph">
-                <pre class="photogr"><strong>Photography</strong>
-                                 </pre>
-            </li>
-            <li class="photogrph">
-                <pre class="photogr"><strong>Photography</strong>
-                                </pre>
-            </li>
-
+    <!--here i am working for my work experience section-->
+    <header>
+		<h1>What i do ...</h1>
+         <!--here i used this hr tag to create a horizontal line for the division of my work and i have drawn here 2 lines-->
+      
+        </header>
+	<main>
+		<section class="work-experience">
+			<div class="web">
+                <!--this is my first work-->
+				<h2>Photoshop Editor</h2>
+				<p class="work-place">Gundu Photo Studio</p>
+				<p class="date">19th Sep 2021- Now</p>
+				<ul>
+					<li>Created and designed marketing stuff comparable as digital advertisements, social media plates, pamphlets, and leaflets using Photoshop, Illustrator, and InDesign </li>
+					<li> Edited and retouched product prints for guests to enhance their online presence and increase deals </li>
+					<li>Conducted photoshoots for guests and edited the images to insure they met the customer's specifications and brand guidelines </li>
+                    <li>Trained and guided inferior developers on Photoshop and other design software to help their experience and productivity </li>
+				</ul>
+			</div>
+            <!--here i used this hr tag to create a horizontal line for the division of my work and i have drawn here 2 lines-->
+       
+            <!--this is my another work-->
+			<div class="web">
+				<h2>Web Developer</h2>
+				<p class="work-place">Nami-Student</p>
+				<p class="date">January 2023 - Present</p>
+				<ul>
+					<li>Designed and developed websites using HTML and CSS</li>
+					<li>Designed and developed websites using HTML and CSS</li>
+					<li>Designed and developed websites using HTML and CSS</li>
+				</ul>
+			</div>
+       
+    <div class="web">
+        <h2>Photographer</h2>
+        <p class="Press"></p>
+        <p class="date">Sept-2019-Feb-2020</p>
+        <ul>
+            <li>photoshoots, videography</li>
+            <li>Hired for many parties,for photoshoot session</li>
+            <li>I have a good Experience at editing the images, i am a self editor and a photographer</li>
         </ul>
     </div>
+		</section>
+	</main>
      <!--this is my code footer part of the site-->
      <footer>
-        <section>
-            <!--this section will be on my left side here i have used mail-to which will lead anyone direct to the mailbox.-->
-            <div class="left">
-                <ul>
-                    <li>
-                        <h4>About us</h4>
-                        <p>i am a web designer</p>
-                    </li>
-                    <h4>Contact us</h4>
-                    <li><a href="ph:+977-9808055990">+977-9808055990</a></li>
-                    <li><a href="mailto:aprishtamang77@gmial.com">aprishtamang77@gmial.com</a></li>
-                </ul>
+
+        <!--this section will be on my left side here i have used mail-to which will lead anyone direct to the mailbox.-->
+        <div class="left">
+            
+                <h4>Contact us</h4>
+                <p>Thank you for visiting my website! If you have any questions, comments, or feedback, please feel
+                    free to reach to us using the contact information below.</p>
+                <p><a href="ph:+977-9808055990">+977-9808055990</a></p>
+                <p><a href="mailto:aprishtamang77@gmial.com">aprishtamang77@gmial.com</a></p>
+        </div>
+    
+    
+    
+        <!--it is my middle part of my footer i have used pre tag to justify my content in an order-->
+        <div class="middle">
+    
+            <div>
+                <h1>Our servires</h1>
+                <p> photoshops,web designing,logo designing
+                    photoshops,web designing,logo designing
+                    photoshops,web designing,logo designing
+                    photoshops,web designing,logo designing
+                    photoshops,web designing,logo designing
+                    photoshops,web designing,logo designing
+                </p>
             </div>
-        </section>
-
-        <section>
-            <!--it is my middle part of my footer i have used pre tag to justify my content in an order-->
-            <div class="middle">
-
-                <div>
-                    <h1>Our servires</h1>
-                    <p> photoshops,web designing,logo designing
-                        photoshops,web designing,logo designing
-                        photoshops,web designing,logo designing
-                        photoshops,web designing,logo designing
-                        photoshops,web designing,logo designing
-                        photoshops,web designing,logo designing
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <!--here i have used input box for send main ani used bottom direrctly to go in the next page-->
-            <div class="right">
-
-                <input type="email" for="email" placeholder="E-mail"></li>
-                <button class="sendbtn" name="send" for="send">Send</button>
-                <p>Copyright © 2023 <b>aprishtamang77@gmial.com </b> All rights reserved</p>
-
-                <!--this buttom will help to go to my portfolio-->
-                <button for="nextpage" name="nextpage"><a href="./portfolio.html">Next Page>> </a></button>
-
-
-
-            </div>
-        </section>
-
+        </div>
+    
+    
+    
+        <!--here i have used input box for send main ani used bottom direrctly to go in the next page-->
+        <div class="right">
+    
+            <p><input type="email" name="email" placeholder="E-mail"></p>
+            <button name="send" >Send</button>
+            <p>Copyright © 2023 <b>aprishtamang77@gmial.com </b> All rights reserved</p>
+    
+    
+    
+    
+    
+        </div>
     </footer>
 </body>
 

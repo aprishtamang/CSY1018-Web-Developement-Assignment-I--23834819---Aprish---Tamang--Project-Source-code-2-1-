@@ -1,27 +1,355 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-/*here i have mentioned the particular size after which the background color and the color will be changed*/
-
-@media screen and (max-width: 800px)
-{
-body .paragraph{
-  background-color: darkorchid;
-  color:white;
-}
-body footer{
-  background-color: blue;
-  -webkit-text-fill-color: black;
+.buffer{
+  border:6px solid greenyellow;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  animation: spin 5s linear infinite;
+  border-top: 18px solid rgb(55, 43, 226);
+  border-left: 20px solid black;
 }
 
+
+
+/*initial bar*/
+
+#navbar{
+  grid-area: navbar;
+background: rgb(17, 99, 95);
+height: 85px;
+position: relative;
+padding-top: 20px;
 }
+
+nav ul li{
+display: inline-block;
+-webkit-text-fill-color: gold;
+
+}
+nav ul li a{
+  font-size: 18px;
+  text-decoration: none;
+  margin:30px;
+
+}
+nav .active{
+  background : rgb(100, 22, 79);
+color: white;
+border-radius: 10px;
+padding: 12px;
+
+
+}
+nav ul a:hover{
+  
+  background : rgb(87, 1, 1);
+  border-radius: 10px;
+  padding: 12px;
+
+
+}
+.checkbox{
+top : 15px;
+right : 2%;
+font-size: 30px;
+float: right;
+cursor: pointer;
+display: none;
+}
+#check{
+display: none;
+}
+
+.topbtn {
+  border-radius : 10px;
+  font-weight : bold;
+  background-color :rgb(rgb(199, 56, 94), rgb(234, 83, 227), rgb(16, 16, 24));
+  padding : 5px;
+  float: right;
+margin-right: 80px;
+  
+  }
+  .topbtn:hover {
+  border-radius : 12px;
+  padding : 8px;
+  transition : 0.7s;
+  cursor : pointer;
+  }
+
+
+/*here i have used my image as logo*/
+.logo img{
+  height : 40px;
+  width: 40px;
+  border-radius: 8px;
+  margin-right: 8px;
+  float: right;
+}
+
+
+/*this is my profile for the first page*/
+.aprish img{
+  height : 250px;
+  width: 250px;
+  float: right;
+  border-radius: 90px;
+ margin-right: 180px;
+ margin-top: 10%;
+ 
+}
+.aprishinfo{
+  background-color:black;
+  -webkit-text-fill-color: white;
+  padding-top: 12%;
+  padding-bottom: 15%;
+  font-family: serif;
+}
+.aprishinfo h2{
+  font-size: 100px;
+  text-align: center;
+}
+.paragraph{
+  background-color: #DF6C4F;
+}
+footer{
+  background-color: #a4a4a4;
+  display: inline-flex;
+  width: 100%;
+}
+
+/*this is for my portfolio*/
+
+.degree {
+  font-size : 20px;
+  text-align : center;
+  }
+  .degree h1{
+    color : rgba(121, 8, 34, 0.909);
+  }
+  h2{
+    text-align: center;
+    font-size: 50px;
+  }
+  .aboutme h3 {
+  color : rgba(121, 8, 34, 0.909);
+  font-size : 30px;
+  }
+  .me {
+font-family: sans-serif;
+font-size: 24px;
+
+  }
+
+.My-gallery {
+	display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 50px;
+  column-gap: 50px;
+  row-gap: red;
+  display: flex;
+	flex-wrap: wrap;
+box-shadow: #a4a4a4;
+}
+
+.photo {
+	margin: 10px;
+	flex: 1 0 200px;
+}
+
+.photo img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.photo h3 {
+	margin: 5px 0 0;
+	font-size: 24px;
+}
+.blank{
+  background:-webkit-linear-gradient(red,blue,black,yellow,white);
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 30px;
+  column-gap: 30px;
+
+}
+
+
+/*this is for my contact page*/
+main {
+  display:grid;
+  grid-template-columns: auto;
+}
+
+/*hover for the text inside the content division*/
+.vado {
+	max-width: 500px;
+	margin: auto;
+  margin-left: 15%;
+
+}
+
+h1 {
+	text-align: center;
+}
+
+form label {
+	display: block;
+	margin-bottom: 20px;
+}
+
+form input[type="text"]{
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+}
+form input[type="submit"] {
+	background-color: #ffc413;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 8px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+
+ form input[type="email"] {
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+}
+
+ form textarea {
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+}
+
+
+form input[type="submit"]:hover {
+	background-color: #9617eb;
+}
+
+
+/*this is my contact*/
+main{
+display: grid;
+grid-template-columns: auto;
+}
+ .mobile{
+  border: 5px solid;
+  border-radius: 20px;
+  width: 325px;
+  height: 600px;
+  background-color: black;
+  margin-right: 15%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.display {
+  border: 3px solid;
+  width: 300px;
+  height: 550px;
+  background-color: azure;
+  margin-top: 50px;
+  margin-left: 4px;
+  border-radius: 15px;
+  margin-top: 20px; 
+}
+.content {
+  margin-top: -90px;
+  font-size: 24px;
+  margin-right: 15px;
+  margin-bottom: 30%;
+} 
+.camera {
+  background-color: white;
+  width: 6px;
+  height: 6px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 150px;
+
+}
+.inbotton:hover{color: blue;
+}
+
+.login-form{
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 30px;
+ 
+  
+}
+.control-bar{
+  border-radius: 5px;
+  width: 100px;
+  height: 2px;
+  background-color: gray;
+  margin-left: 110px;
+}
+.emoji{
+  margin-left: 90px;
+
+}
+
+/*here is my description part of work*/
+.work-experience {
+	display: flex;
+	flex-direction: column;
+}
+
+.web {
+  padding: 50px;
+  margin-bottom: 20px;
+	border: 1px solid;
+}
+
+
+.web h2 {
+  font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 5px;
+	
+}
+
+.web p {
+	font-family: serif;
+}
+
+.web ul {
+  font-family: serif;
+  font-size: 18px;
+	margin-top: 5px;
+	margin-bottom: 0;
+
+}
+
+.web li {
+	margin-bottom: 5px;
+}
+
+
+/*css of site report*/
+
 
 /*here keyframe is used for my animation*/
 @keyframes animation{
-  from {background-color:black; -webkit-text-fill-color: white;}
-  to {background-color: red; }
+  from {background-color:lightslategrey; -webkit-text-fill-color: rgb(253, 253, 253);}
+  to {background-color: rgb(0, 0, 0); }
   
 }
 /*the info area color will slowly changes*/
@@ -30,340 +358,76 @@ body footer{
   height: 100%;
   animation-name: animation;
 
-  animation-duration:5s;
-}
-/*first bar of my site*/
-.navbar {
-  width: 100%;
-  background-color: lightseagreen;
-}
-
-.burger-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 62px;
-}
-
-.navbar .menu-items {
-  display: flex;
-}
-
-.navbar .burder-container li {
-  list-style: none;
-}
-
-.navbar .burger-container a {
-  text-decoration: none;
-  color:black;
-  padding: 12px;
-  font-weight: 500;
-  font-size: 20px;
-}
-
-.navbar .burger-container a:hover{
-    color: white;
-    background-color: blue;
-}
-
-.burger-container {
-  display: block;
-  position: relative;
-  height: 60px;
-}
-/*this is a hidden check box which i used behind the layers of burger*/
-.burger-container .checkbox {
-  position: absolute;
-  display: block;
-  height: 50px;
-  width: 45px;
-  padding-top: 20px;
-  left: 20px;
-  z-index: 5;
-  opacity: 0;
-  cursor: pointer;
+  animation-duration:10s;
 }
 
 
-.burger-container .hamburger-layers {
-  display: block;
-  height: 26px;
-  width: 40px;
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+@keyframes spin {
+  100%{transform:rotate(360deg);}
+  0%{ transform: rotate(0deg);}
 }
 
-.burger-container .hamburger-layers .layer {
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 10px;
-  background: blueviolet;
-}
-
-.burger-container .hamburger-layers .topbun {
-  transform-origin: 0% 0%;
-  transition: transform 0.4s ease-in-out;
-}
-
-.burger-container .hamburger-layers .fillings {
-  transition: transform 0.2s ease-in-out;
-}
-
-.burger-container .hamburger-layers .lastbun{
-  transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out;
-}
-
-.navbar .menu-items {
-  padding-top: 120px;
-  -webkit-text-fill-color: white;
-  box-sizing: 500px;
-  background-color: black;
-  height: 60vh;
-  width: 30%;
-  transform: translate(-150%);
-  display: flex;
-  flex-direction: column;
-  padding-left: 10px;
-  text-align: left;
-}
-
-.navbar .menu-items li {
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: 500;
-}
-/*here i have used my image as logo*/
-.logo img{
-  height : 40px;
-  width: 40px;
-  float: right;
-  border-radius: 8px;
-  margin-top: 10px;
-  margin-right: 5px;
-}
-
-.burger-container input[type="checkbox"]:checked ~ .menu-items {
-  transform:none;
-}
-
-.burger-container input[type="checkbox"]:checked ~ .hamburger-layers .topbun {
-  transform:none;
-}
-
-.burger-container input[type="checkbox"]:checked ~ .hamburger-layers.fillings {
-  transform: none;
-}
-
-.burger-container input[type="checkbox"]:checked ~ .hamburger-layers .lastbun {
-  transform:none;
-}
-
-.logo a input[type="checkbox"]:checked ~ .logo{
-  display: none;
-}
+/*here i have mentioned the particular size after which the background color and the color will be changed*/
 
 
-
-/*this is my profile for the first page*/
-.aprish img{
-  height : 300px;
-  width: 300px;
-  float: right;
-  border-radius: 100px;
- margin-right: 100px;
- 
-}
-.aprishinfo{
-  background-color: aquamarine;
-  padding-top: 10%;
-  padding-left: 10%;
-
-}
-.paragraph{
-  background-color: blanchedalmond;
-}
-
-
-/*this is for my contact page*/
-section {
-  width: 100%;
-  height: 75%;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-
-.content {
-  height:60%;
-  width: 100%;
-  box-sizing: border-box;
-  font-weight: bold;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-
-}
-
-/*hover for the text inside the content division*/
-.contactleft{
-  margin-top: 40px;
-  margin-left: 50px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-.contactright{
-  margin: auto;
-  height: 40%;
-  width: 100%;
-  margin-left: 300px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-
-
-}
-.contactright >input{
-  padding-top: 20px;
-padding-right: 50px;
-margin-top: 20px;
-display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-.txt{
-  padding-top: 20px;
-  padding-right: 50px;
-  margin-top: 20px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-.submitbutn:hover{
-  color: white;
+@media screen and (max-width: 800px)
+{
+body footer{
   background-color: blue;
+  -webkit-text-fill-color: black;
   
 }
-.submitbutn{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 30px;
-  margin-top: 20px;
-  border-radius: 9px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-/*this is for the image i have put in-between the form and my contact detail*/
-.path{
-  margin-left: 10%;
-  margin-top: 10%;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-/*this is for my foot section*/
+main{
 
+  display: flex;
+  flex-direction: column;
+  /*grid-template-columns: auto; */
+}
 footer{
-  background-color: lightsteelblue;
-  display: inline-flex;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+}
+@media screen and (max-width: 400px) {
+  nav ul li a{
+  display: none;
+  }
   
-}
-.left{
-font-family: sans-serif;
+   nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    right:100px
+  }
+  nav ul li{
+    margin: 50px;
+   
+  }
+  #check:checked ~ ul{
+    right: auto;
+  }
+  .item {
+    font-weight : bolder;
 
-}
+    }
+    .topbtn {
+      display: none;
+    }
+    .aprishinfo{
+      margin-right:20px ;
+    }
+    .aprish{
+      -webkit-margin-top-collapse: collapse;
+    }
+    .buffer{
+      width: 300px;
+      height: 300px;
+    }
+    .aprish img{
+      height : 180px;
+  width: 180px;
+  padding-left: 30px;
+    }
 
-/*this is for my portfolio*/
-1 1 1 1 1 1 1
-/*workexperiences page working on css*/
-.workbody{
-  width: 100%;
-  height: 80%;
-  background-color: red;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-.work{
-
-  height: 80%;
-  width: 100%;
-  padding: 100px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-/*here i have used a small logo to make my work division*/
-.photograph{
-  border: 1ox solid;
-  height: 40px;
-  width: 40px;
-  border-radius: 6px;
-  background-image: url(./photos/logo.png );
-  background-repeat: no-repeat;
-  background-size: 40px;
-  margin-top: 20px;
-  font-size: 20px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-.photogr{
-  margin-left: 50px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-
-}
-.webdesign{
-  border: 1ox solid;
-  height: 40px;
-  width: 40px;
-  border-radius: 6px;
-  background-image: url(./photos/webdesig.jpg);
-  background-repeat: no-repeat;
-  background-size: 40px;
-  margin-top: 20px;
-  font-size: 20px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-}
-.webdesig{
-  margin-left: 50px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  
-}
-.digi{
-  border: 1ox solid;
-  height: 40px;
-  width: 40px;
-  border-radius: 6px;
-  background-image: url(./photos/digi.png);
-  background-repeat: no-repeat;
-  background-size: 40px;
-  margin-top: 20px;
-  font-size: 20px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-
-}
-.digital{
-  margin-left: 50px;
-  display:grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  
-}
+  }

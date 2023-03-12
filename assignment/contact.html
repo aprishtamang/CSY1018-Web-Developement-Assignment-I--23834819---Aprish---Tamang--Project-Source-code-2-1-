@@ -10,134 +10,137 @@
 </head>
 
 <body>
-    <!--this is nav bar -->
+   
+<nav class="item" id="navbar">
+    <!--these items are my main contents-->
+    <div class="logo">
+        <a href="./index.html"><img src="./photos/profile.jpg" alt="this is my logo ">
+        </a>
+        <input type="checkbox" id="check" class="checkbox">
+    </div>
+    <div class="dropdown"> <select class="topbtn">
+            <option value="Eng">English (Eng)</option>
+            <option value="Nep">Nepali (Nep)</option>
+            <option value="Nep">Hindi</option>
+            <option value="Nep">German</option>
+            <option value="Nep">Tamang</option>
 
-    <nav>
-        <div class="navbar">
-            <div class="hamburger burger-container">
-                <input type="checkbox" class="checkbox" name="" id="">
-                <div class="logo">
-                    <img src="./photos/profile.jpg" alt="this is my logo ">
-                    <a href="./index.html"></a>
-                </div>
-                <div class="hamburger-layers">
-                    <span class="layer topbun"></span>
-                    <span class="layer fillings"></span>
-                    <span class="layer lastbun"></span>
-                </div>
-                
-                <!--these items are my main contents-->
-                <div class="menu-items">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./portfolio.html">Portfolio</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./workexperience.html">Work Experience</a></li>
-                    <li><a href="./sitereport.html">Site Report</a></li>
-                </div>
-                
-            </div>
+        </select>
+    </div>
+    <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a href="./workexperience.html">Work Experience</a></li>
+        <li><a href="sitereport.html">Site Report</a></li>
+    </ul>
+</nav>
+    <!--this is my contact -->
+    <!--this is my contact-->
+    <main style="display: flex;">
+
+        <div class="vado">
+            <h1>Contact Us</h1>
+            <form action="submit-form.php" method="POST">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="Username" placeholder="Enter your Full-Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email Address" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Do you wanna say anything,please fill-up" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
         </div>
-    </nav>
-    <!--section for the contact left section-->
-    <section>
-        <div class="halfsection">
-            <div class="content">
-                <h1>Contact</h1>
-                <span>----------------</span>
-                <p>If you like to know more,</p>
-                <span>please contact me...</span>
-            </div>
-        </div>
-        <hr />
-        <div class="contactbor">
-            <div style="display: flex;">
+        <div class="mobile">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="login-form">
+                        <div class="content">
+                            <h3>Contact</h3>
+                            <span>----------------</span>
+                            <p>send direct mail clicking ,</p>
+                            <span>on my e-mail</span>
+                        </div>
+                    
+                </div>
+                <div>
+                    <p style="font-size:20px" class="emoji">
+                        &#128512; &#128516; &#128525; &#128151;
+                    </p>
+                </div>
+
                 <div class="contactleft">
-                    <h2>Address:</h2>
+                    <h5>Address:</h5>
                     <ul>
                         <li>Suryabinyak,04,Bhaktapur</li>
-                        <li>448100</li>
+                        <li>44800</li>
                     </ul>
-                    <h2>Contact Number</h2>
+                    <h5>Contact Number</h5>
                     <ul>
                         <li><a href="ph:+977-9808055990">+977-9808055990</a></li>
                         <li><a href="ph:+977-9848777719">+977-9848777719</a></li>
                     </ul>
                     <!--here i have used mail to link in which you can directly send mail to me by one click in my mail-->
-                    <h2>E-mail Address</h2>
-                    <ul>
-                        <p>
-                            <li><a href="mailto:aprishtamang77@gmial.com">aprishtamang77@gmial.com</a></li>
-                            <li><a href="aprish.2023171@nami.edu.np">aprish.2023171@nami.edu.np</a></li>
-                        </p>
-                    </ul>
+                    <h5>E-mail Address</h5>
+
+                        <h5>
+                            <a href="mailto:aprishtamang77@gmial.com">aprishtamang77@gmial.com</a>
+                        </h5>
 
                 </div>
-                <div class="path"> <img src="./photos/path.jpg" alt="i  took a reference from this site https://www.pngwing.com/en/free-png-nhvtx"></div>
-
-                <form class="contactright">
-                    <input type="text" name="username" placeholder="firstname" required></br>
-                    <input type="lastname" name="lastname" placeholder="lastname"></input></br>
-                    <input type="number" name="contact" placeholder="Contact"></br>
-                    <input type="email" name="E-mail" placeholder="E-mail" required></br>
-                    <input type="date" name="date" placeholder="Date" required></br>
-                    <textarea type="text/num" placeholder="description" class="txt"></textarea></br>
-                    <button class="submitbutn"> Submit</button>
-                </form>
             </div>
+            <div class="control-bar"></div>
         </div>
+    </main>
+    <!--this is my code footer part of the site-->
+  
+<footer>
 
-    </section>
-     <!--this is my code footer part of the site-->
-     <footer>
-        <section>
-            <!--this section will be on my left side here i have used mail-to which will lead anyone direct to the mailbox.-->
-            <div class="left">
-                <ul>
-                    <li>
-                        <h4>About us</h4>
-                        <p>i am a web designer</p>
-                    </li>
-                    <h4>Contact us</h4>
-                    <li><a href="ph:+977-9808055990">+977-9808055990</a></li>
-                    <li><a href="mailto:aprishtamang77@gmial.com">aprishtamang77@gmial.com</a></li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <!--it is my middle part of my footer i have used pre tag to justify my content in an order-->
-            <div class="middle">
-
-                <div>
-                    <h1>Our servires</h1>
-                    <p> photoshops,web designing,logo designing
-                        photoshops,web designing,logo designing
-                        photoshops,web designing,logo designing
-                        photoshops,web designing,logo designing
-                        photoshops,web designing,logo designing
-                        photoshops,web designing,logo designing
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <!--here i have used input box for send main ani used bottom direrctly to go in the next page-->
-            <div class="right">
-
-                <input type="email" for="email" placeholder="E-mail"></li>
-                <button class="sendbtn" name="send" for="send">Send</button>
-                <p>Copyright © 2023 <b>aprishtamang77@gmial.com </b> All rights reserved</p>
-
-                <!--this buttom will help to go to my portfolio-->
-                <button for="nextpage" name="nextpage"><a href="./portfolio.html">Next Page>> </a></button>
+    <!--this section will be on my left side here i have used mail-to which will lead anyone direct to the mailbox.-->
+    <div class="left">
+        
+            <h4>Contact us</h4>
+            <p>Thank you for visiting my website! If you have any questions, comments, or feedback, please feel
+                free to reach to us using the contact information below.</p>
+            <p><a href="ph:+977-9808055990">+977-9808055990</a></p>
+            <p><a href="mailto:aprishtamang77@gmial.com">aprishtamang77@gmial.com</a></p>
+    </div>
 
 
 
-            </div>
-        </section>
+    <!--it is my middle part of my footer i have used pre tag to justify my content in an order-->
+    <div class="middle">
 
-    </footer>
+        <div>
+            <h1>Our servires</h1>
+            <p> photoshops,web designing,logo designing
+                photoshops,web designing,logo designing
+                photoshops,web designing,logo designing
+                photoshops,web designing,logo designing
+                photoshops,web designing,logo designing
+                photoshops,web designing,logo designing
+            </p>
+        </div>
+    </div>
+
+
+
+    <!--here i have used input box for send main ani used bottom direrctly to go in the next page-->
+    <div class="right">
+
+        <p><input type="email" name="email" placeholder="E-mail"></p>
+        <button name="send" >Send</button>
+        <p>Copyright © 2023 <b>aprishtamang77@gmial.com </b> All rights reserved</p>
+
+
+
+
+
+    </div>
+</footer>
 </body>
 
 </html>
