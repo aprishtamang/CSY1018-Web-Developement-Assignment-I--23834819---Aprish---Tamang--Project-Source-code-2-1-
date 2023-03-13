@@ -26,13 +26,12 @@ padding-top: 20px;
 
 nav ul li{
 display: inline-block;
--webkit-text-fill-color: gold;
-
 }
 nav ul li a{
   font-size: 18px;
   text-decoration: none;
   margin:30px;
+  color: gold;
 
 }
 nav .active{
@@ -66,7 +65,6 @@ display: none;
 .topbtn {
   border-radius : 10px;
   font-weight : bold;
-  background-color :rgb(rgb(199, 56, 94), rgb(234, 83, 227), rgb(16, 16, 24));
   padding : 5px;
   float: right;
 margin-right: 80px;
@@ -102,7 +100,7 @@ margin-right: 80px;
 }
 .aprishinfo{
   background-color:black;
-  -webkit-text-fill-color: white;
+  color: white;
   padding-top: 12%;
   padding-bottom: 15%;
   font-family: serif;
@@ -148,10 +146,8 @@ font-size: 24px;
   grid-template-columns: auto auto auto;
   row-gap: 50px;
   column-gap: 50px;
-  row-gap: red;
   display: flex;
 	flex-wrap: wrap;
-box-shadow: #a4a4a4;
 }
 
 .photo {
@@ -170,7 +166,6 @@ box-shadow: #a4a4a4;
 	font-size: 24px;
 }
 .blank{
-  background:-webkit-linear-gradient(red,blue,black,yellow,white);
   display: grid;
   grid-template-columns: auto;
   row-gap: 30px;
@@ -344,11 +339,14 @@ grid-template-columns: auto;
 
 
 /*css of site report*/
+.topic{
+  font-size: 90px;
+}
 
 
 /*here keyframe is used for my animation*/
 @keyframes animation{
-  from {background-color:lightslategrey; -webkit-text-fill-color: rgb(253, 253, 253);}
+  from {background-color:lightslategrey; color: rgb(253, 253, 253);}
   to {background-color: rgb(0, 0, 0); }
   
 }
@@ -373,8 +371,8 @@ grid-template-columns: auto;
 @media screen and (max-width: 800px)
 {
 body footer{
-  background-color: blue;
-  -webkit-text-fill-color: black;
+  background-color:lightgrey;
+  color:black;
   
 }
 main{
@@ -418,7 +416,8 @@ footer{
       margin-right:20px ;
     }
     .aprish{
-      -webkit-margin-top-collapse: collapse;
+      display:flex;
+      flex-direction: row;
     }
     .buffer{
       width: 300px;
