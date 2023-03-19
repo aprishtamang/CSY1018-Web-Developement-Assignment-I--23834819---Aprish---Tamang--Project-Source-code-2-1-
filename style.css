@@ -1,66 +1,205 @@
 * {
   margin: 0;
-  box-sizing: border-box;
-}
-.buffer{
-  border:6px solid greenyellow;
-  border-radius: 50%;
-  width: 500px;
-  height: 500px;
-  animation: spin 5s linear infinite;
-  border-top: 18px solid rgb(55, 43, 226);
-  border-left: 20px solid black;
+  font-family: serif;
 }
 
+
+/*first bar of my site*/
+
+.container {
+  max-width: 800px;
+  width: 20%;
+  
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color:white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+.topbtn{
+  float: right;
+  margin-right: 20px;
+}
+
+.logo img{
+  height : 40px;
+  width: 40px;
+  border-radius: 8px;
+  margin-right: 8px;
+  margin-top: 10px;
+  float: right;
+}
+
+.navbar .nav-container a:hover{
+    color:white;
+    background-color: blue;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 40px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #0e2431;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 120px;
+  background-color: black;
+  height: 100vh;
+  width: 400px;
+  transform: translateX(-640px);
+  display: flex;
+  flex-direction: column;
+  margin-left: 140px;
+  padding-left: 10px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items ul li a{
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color:white;
+
+}
+.logo{
+height:40px;
+width:40px;
+float:right;
+}
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(-140px);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+.nav-container input[type="checkbox"]:checked~ .hamd{transform: translateX(20px);}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+
+.dropdown{
+  padding-top: 20px;
+}
+
+.hamd{display: none;}
 
 
 /*initial bar*/
 
-#navbar{
+.nav-head{
   grid-area: navbar;
-background: rgb(17, 99, 95);
+background:linear-gradient(rgb(27, 27, 61),rgb(57, 57, 138),rgb(107, 107, 161),rgb(87, 87, 255));
 height: 85px;
 position: relative;
-padding-top: 20px;
+
 }
 
-nav ul li{
+ .nav-head .desktopnav ul li{
 display: inline-block;
+text-decoration: none;
+
 }
-nav ul li a{
+.desktopnav ul li a{
   font-size: 18px;
   text-decoration: none;
   margin:30px;
-  color: gold;
+  color: black;
 
 }
-nav .active{
-  background : rgb(100, 22, 79);
+
+.menu-items .active{
+  background : rgb(133, 10, 12);
+  transition: 0.5s;
 color: white;
 border-radius: 10px;
 padding: 12px;
 
-
 }
-nav ul a:hover{
-  
+
+.desktopnav ul a:hover{
+  transition: 0.5s;
   background : rgb(87, 1, 1);
   border-radius: 10px;
   padding: 12px;
 
 
 }
-.checkbox{
-top : 15px;
-right : 2%;
-font-size: 30px;
-float: right;
-cursor: pointer;
-display: none;
-}
-#check{
-display: none;
-}
+
 
 .topbtn {
   border-radius : 10px;
@@ -71,21 +210,22 @@ margin-right: 80px;
   
   }
   .topbtn:hover {
+    color: maroon;
   border-radius : 12px;
   padding : 8px;
   transition : 0.7s;
   cursor : pointer;
-  }
+  } 
 
 
-/*here i have used my image as logo*/
+
 .logo img{
   height : 40px;
   width: 40px;
   border-radius: 8px;
   margin-right: 8px;
   float: right;
-}
+} 
 
 
 /*this is my profile for the first page*/
@@ -99,7 +239,7 @@ margin-right: 80px;
  
 }
 .aprishinfo{
-  background-color:black;
+  background:linear-gradient(rgba(84, 84, 135, 0.774),rgba(131, 216, 131, 0.769), rgba(138, 67, 67, 0.847),rgba(135, 37, 37, 0.701));;
   color: white;
   padding-top: 12%;
   padding-bottom: 15%;
@@ -107,6 +247,10 @@ margin-right: 80px;
 }
 .aprishinfo h2{
   font-size: 100px;
+  text-align: center;
+}
+.aprishinfo h1{
+  font-size: 50px;
   text-align: center;
 }
 .paragraph{
@@ -117,9 +261,16 @@ footer{
   display: inline-flex;
   width: 100%;
 }
+ .contactsm{
+  text-align: center;
+}
+.right{
+  text-align: center;
+  background-color:  #a07575;
+  
+}
 
 /*this is for my portfolio*/
-
 .degree {
   font-size : 20px;
   text-align : center;
@@ -130,15 +281,20 @@ footer{
   h2{
     text-align: center;
     font-size: 50px;
+    padding: 15px;
   }
   .aboutme h3 {
   color : rgba(121, 8, 34, 0.909);
   font-size : 30px;
+  
   }
   .me {
 font-family: sans-serif;
 font-size: 24px;
 
+  }
+  header{
+    background: linear-gradient(rgb(154, 84, 149),rgb(77, 113, 174),rgb(79, 123, 135),rgb(162, 180, 108));
   }
 
 .My-gallery {
@@ -178,6 +334,7 @@ font-size: 24px;
 main {
   display:grid;
   grid-template-columns: auto;
+  background: linear-gradient(rgb(154, 84, 149),rgb(77, 113, 174),rgb(79, 123, 135),rgb(162, 180, 108));
 }
 
 /*hover for the text inside the content division*/
@@ -185,11 +342,8 @@ main {
 	max-width: 500px;
 	margin: auto;
   margin-left: 15%;
+  border: 1px solid maroon;
 
-}
-
-h1 {
-	text-align: center;
 }
 
 form label {
@@ -202,16 +356,15 @@ form input[type="text"]{
 	padding: 15px;
 	margin-bottom: 20px;
 	border-radius: 5px;
-	border: 1px solid #ccc;
+	border: 1px solid;
 	font-size: 16px;
 }
 form input[type="submit"] {
 	background-color: #ffc413;
-	padding: 10px 20px;
-	border: none;
+	padding: 10px;
 	border-radius: 8px;
 	font-size: 16px;
-	cursor: pointer;
+  cursor: pointer;
 }
 
 
@@ -220,7 +373,7 @@ form input[type="submit"] {
 	padding: 15px;
 	margin-bottom: 20px;
 	border-radius: 5px;
-	border: 1px solid #ccc;
+	border: 1px solid;
 	font-size: 16px;
 }
 
@@ -229,7 +382,7 @@ form input[type="submit"] {
 	padding: 15px;
 	margin-bottom: 20px;
 	border-radius: 5px;
-	border: 1px solid #ccc;
+	border: 1px solid;
 	font-size: 16px;
 }
 
@@ -260,7 +413,7 @@ grid-template-columns: auto;
   height: 550px;
   background-color: azure;
   margin-top: 50px;
-  margin-left: 4px;
+  margin-left: 8px;
   border-radius: 15px;
   margin-top: 20px; 
 }
@@ -339,15 +492,92 @@ grid-template-columns: auto;
 
 
 /*css of site report*/
-.topic{
-  font-size: 90px;
+h5{
+  font-size: 50px;
+}
+.reportheading{
+  text-align: center;
+  font-family:fantasy;
+  
+}
+.assign{
+  background-color: cadetblue;
+  border-radius: 10px;
+}
+.unilogo img{
+  height: 70px;
+  margin: auto;
+  float: right;
+}
+.unilogo span{
+  font-size: 50px;
+  font-family: cursive;
+  margin-left: 20px;
+}
+ .sitemain{
+  display : grid;
+  grid-gap : 32px;
+  grid-template-columns : auto auto;
+  padding: 20px;
+}
+
+.sl{
+	display:grid;
+  row-gap: 50px;
+  column-gap: 50px;
+}
+
+.sl img{
+  width: 100%;
+  border: 3px solid silver;
+  border: 2px dashed white;
+  border-radius: 30px
+}
+
+.ReportContainer{
+  border: 2px dashed white;
+  border-radius: 30px
+
+}
+
+.ReportContainer p{
+  text-align: justify;
+  padding: 10px;
+}
+.multi img{
+width: 500px;
+height: auto;
+
+}
+.sitess img{
+  width: 500px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.multi{
+  display: flex;
+}
+.guide{
+  display: grid;
+  grid-auto-flow: row;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.Simages p{
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
 }
 
 
 /*here keyframe is used for my animation*/
 @keyframes animation{
-  from {background-color:lightslategrey; color: rgb(253, 253, 253);}
-  to {background-color: rgb(0, 0, 0); }
+  from {background:linear-gradient(rgb(154, 84, 149),rgb(77, 113, 174),rgb(79, 123, 135),rgb(162, 180, 108)) ;color: rgb(253, 253, 253);}
+  to {background:linear-gradient(rgba(84, 84, 135, 0.774),rgba(131, 216, 131, 0.769), rgba(138, 67, 67, 0.847),rgba(135, 37, 37, 0.701)); }
   
 }
 /*the info area color will slowly changes*/
@@ -364,12 +594,25 @@ grid-template-columns: auto;
   100%{transform:rotate(360deg);}
   0%{ transform: rotate(0deg);}
 }
+.buffer{
+  border:6px solid greenyellow;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  animation: spin 5s linear infinite;
+  border-top: 18px solid rgb(55, 43, 226);
+  border-left: 20px solid black;
+  margin-top: 120px;
+  margin-left: 160px;
+}
 
 /*here i have mentioned the particular size after which the background color and the color will be changed*/
 
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 1000px)
 {
+  .menu-items{transform: translateX(0px);}
+  .hamd{display: block;}
 body footer{
   background-color:lightgrey;
   color:black;
@@ -385,10 +628,20 @@ footer{
   display: flex;
   flex-direction: column;
 }
-
+.blank img{
+  width:200px;
+  height: 250px;
+  margin-left: 20px;
+  }
+.mobile{
+  margin-left: 30px;
 }
-@media screen and (max-width: 400px) {
-  nav ul li a{
+.sitemain{
+  grid-template-columns: auto;
+}
+}
+@media screen and (max-width: 1000px) {
+  .desktopnav ul li a{
   display: none;
   }
   
@@ -396,12 +649,15 @@ footer{
     position: fixed;
     width: 100%;
     height: 100%;
-    right:100px
+    right:100px;
+   
   }
   nav ul li{
     margin: 50px;
+    
    
   }
+  
   #check:checked ~ ul{
     right: auto;
   }
@@ -415,18 +671,28 @@ footer{
     .aprishinfo{
       margin-right:20px ;
     }
-    .aprish{
-      display:flex;
-      flex-direction: row;
-    }
     .buffer{
       width: 300px;
       height: 300px;
+      margin-left: 20px;
     }
     .aprish img{
-      height : 180px;
-  width: 180px;
-  padding-left: 30px;
+      height : 120px;
+  width: 120px;
+  border-radius: 30px;
+  margin-left: 30px;
     }
-
+  }
+  @media screen and (max-width: 800px){
+    
+   
+    .sitess{
+      display: none;
+    }
+    .unilogo img{
+      display: none;
+    }
+    .unilogo span{
+      font-size: 30px;
+    }
   }
